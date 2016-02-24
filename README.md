@@ -6,11 +6,18 @@ YAML
 
 Install
 -------
-_**TBD**_
+$ composer require radioactivehamster/yaml
 
 Usage
 -----
-_**TBD**_
+```php
+<?php
+
+use RadHam\Yaml;
+
+$file = 'hello-world.yml';
+Yaml::parseFile($file);
+```
 
 License
 -------

@@ -18,9 +18,21 @@ class Yaml
         );
     }
 
+    /**
+     * Parse a YAML file into an object or array.
+     *
+     * @param string $filename
+     * @return mixed
+     * @throws RuntimeException
+     */
     public static function parseFile($filename)
     {
-        $file     = new SplFileInfo($filename);
+        $file = new SplFileInfo($filename);
+
+        if (!$file->isFile()) {
+            throw new RuntimeException('Invalid filename supplied for `RadHam\Yaml::parseFile()`.');
+        }
+
         $contents = file_get_contents($file->getPathname());
 
         return self::parse($contents);

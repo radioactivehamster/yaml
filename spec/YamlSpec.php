@@ -19,4 +19,11 @@ class YamlSpec extends ObjectBehavior
 
         $this::parseFile($filename)->shouldBeLike($control);
     }
+
+    function it_should_throw_a_runtime_exception_if_an_invalid_filename_is_supplied_to_parse_a_yaml_file()
+    {
+        $invalidFile = __DIR__ . '/data/not-a-real-yaml-file.yml';
+
+        $this->shouldThrow('\RuntimeException')->duringParseFile($invalidFile);
+    }
 }

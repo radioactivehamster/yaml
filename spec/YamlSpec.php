@@ -11,4 +11,12 @@ class YamlSpec extends ObjectBehavior
     {
         $this->shouldHaveType('RadHam\Yaml');
     }
+
+    function it_should_parse_a_yaml_file()
+    {
+        $control  = (object) ['hello' => 'world'];
+        $filename = __DIR__ . '/data/hello-world.yml';
+
+        $this::parseFile($filename)->shouldBeLike($control);
+    }
 }

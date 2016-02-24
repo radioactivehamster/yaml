@@ -8,6 +8,17 @@ use Symfony\Component\Yaml\Yaml as SymfonyYaml;
 
 class Yaml
 {
+    public static function dump($data)
+    {
+        return SymfonyYaml::dump(
+            $data,
+            $inline                 = 0,
+            $indent                 = 0,
+            $exceptionOnInvalidType = true,
+            $objectSupport          = true
+        );
+    }
+
     public static function parse($yaml)
     {
         return SymfonyYaml::parse(

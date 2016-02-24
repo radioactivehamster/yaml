@@ -1,4 +1,5 @@
 /.idea/
+/spec/data/.tmp/
 /vendor/
 composer.phar
 

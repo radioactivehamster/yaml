@@ -4,21 +4,18 @@ namespace RadHam;
 
 use RuntimeException;
 use SplFileInfo;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml as SymfonyYaml;
 
 class Yaml
 {
-    public static function dump($data)
-    {
-        return SymfonyYaml::dump(
-            $data,
-            $inline                 = 0,
-            $indent                 = 0,
-            $exceptionOnInvalidType = true,
-            $objectSupport          = true
-        );
-    }
-
+    /**
+     * Parse YAML into an object or array.
+     *
+     * @param  string $yaml
+     * @throws ParseException
+     * @return mixed
+     */
     public static function parse($yaml)
     {
         return SymfonyYaml::parse(
@@ -32,7 +29,7 @@ class Yaml
     /**
      * Parse a YAML file into an object or array.
      *
-     * @param string $filename
+     * @param  string $filename
      * @throws RuntimeException
      * @return mixed
      */

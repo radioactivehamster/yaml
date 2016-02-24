@@ -1,4 +1,4 @@
-Yaml
+YAML
 ====
 > An extended variant of the Symfony PHP YAML library.
 

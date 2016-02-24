@@ -6,7 +6,9 @@ YAML
 
 Install
 -------
+```sh
 $ composer require radioactivehamster/yaml
+```
 
 Usage
 -----

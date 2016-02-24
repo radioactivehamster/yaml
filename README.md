@@ -17,6 +17,9 @@ Usage
 
 use RadHam\Yaml;
 
+$yaml = '[hello, world]';
+$data = Yaml::parse($yaml)
+
 $file = 'hello-world.yml';
 Yaml::parseFile($file);
 ```

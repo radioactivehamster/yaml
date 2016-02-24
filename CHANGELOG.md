@@ -3,6 +3,12 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+0.1.3 - 2016-02-24
+------------------
+### Added
+- Added `it_should_parse_a_yaml_string()` test.
+- Usage info for `RadHam::parse()` in the `README.md`.
+
 0.1.2 - 2016-02-24
 ------------------
 ### Changed

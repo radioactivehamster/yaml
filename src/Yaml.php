@@ -22,8 +22,8 @@ class Yaml
      * Parse a YAML file into an object or array.
      *
      * @param string $filename
-     * @return mixed
      * @throws RuntimeException
+     * @return mixed
      */
     public static function parseFile($filename)
     {

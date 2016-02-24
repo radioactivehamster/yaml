@@ -22,7 +22,7 @@ class Yaml
             $yaml,
             $exceptionOnInvalidType = true,
             $objectSupport          = true,
-            $objectForMap           = true
+            $objectForMap           = false
         );
     }
 

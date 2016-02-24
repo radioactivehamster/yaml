@@ -22,7 +22,7 @@ class YamlSpec extends ObjectBehavior
 
     function it_should_parse_a_yaml_file()
     {
-        $control  = (object) ['hello' => 'world'];
+        $control  = ['hello' => 'world'];
         $filename = __DIR__ . '/data/hello-world.yml';
 
         self::parseFile($filename)->shouldBeLike($control);

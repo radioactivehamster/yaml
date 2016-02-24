@@ -1,6 +1,6 @@
 Yaml
 ====
-> An extended variant of the Symfony PHP Yaml library.
+> An extended variant of the Symfony PHP YAML library.
 
 [![Packagist Version][PACKAGIST VERSION BADGE]][PACKAGIST PAGE] [![GitHub license][LICENSE BADGE]][LICENSE PAGE] [![Build Status][BUILD BADGE]][BUILD PAGE]
 
